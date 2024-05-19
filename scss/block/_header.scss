@@ -1,0 +1,232 @@
+.header__up {
+  background-color: var(--color-dark);
+  color: var(--color-grey);
+
+  &-main {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    font-size: 14px;
+    line-height: 1.7;
+    padding-block: 12px;
+    font-family: "pRegular";
+    &__info {
+      span {
+        position: relative;
+        font-weight: 600;
+        // border-bottom: 0.1px solid var(--color-grey);
+        margin-left: 8px;
+        line-height: 0;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 2px;
+          background-color: #fff;
+          width: 100%;
+          height: 0.3px;
+          left: 0;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+
+  &-language {
+    position: absolute;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+}
+
+.header {
+  &__sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 15px 16.25px 15px;
+
+    &-wrapper {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__sections-name {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &__sections-list {
+    font-weight: 600;
+    max-width: 367px;
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__sections-buttons {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    &__input {
+      padding: 7px 12px 7px 20px;
+      background-color: #f5f5f5;
+      border-radius: 4px;
+      position: relative;
+
+      &::placeholder {
+        font-size: 12px;
+      }
+    }
+  }
+}
+.container {
+}
+
+.header__sections-buttons__wrapper-input {
+  position: relative;
+  &::after {
+    content: url(./../../icon/header/search.svg);
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-11px, 9px);
+  }
+}
+
+.header__sections-link {
+  color: var(--color-dark);
+  transition-duration: 1s;
+  position: relative;
+  transition: all 1s;
+  @include hover {
+    // border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+.header__sections-item {
+  position: relative;
+}
+
+//-------main block---------
+.header {
+  &__main {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    justify-content: space-between;
+  }
+
+  &__main-choise {
+  }
+
+  &__main-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 217px;
+    padding: 50px 24px 0 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  &__main-item {
+  }
+
+  &__main-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-dark);
+    line-height: 24px;
+  }
+
+  &__swiper {
+    margin-left: 64px;
+    display: flex;
+    margin-top: 50px;
+    background-color: var(--color-dark);
+    color: var(--color-grey);
+    justify-content: space-between;
+    padding-block: 15px;
+  }
+
+  &__swiper-info {
+    max-width: 350px;
+    gap: 20px;
+    padding-block: 52px;
+    padding-left: 64px;
+    display: flex;
+    flex-direction: column;
+
+    &__name {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    &__title {
+      font-size: var(--big-size);
+      line-height: var(--big-lh);
+    }
+
+    &__button {
+      color: var(--color-grey);
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+  }
+
+  &__swiper-image {
+  }
+}
+.str {
+  &__button {
+  }
+}
+.slider {
+  &__pogination {
+  }
+}
+
+.apple__image {
+  padding-bottom: 5px;
+}
+.shop__now-btn {
+  padding-bottom: 3px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiper-wrapper {
+  width: unset;
+  max-width: 892px;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--color-accent) !important;
+  border: 1px solid #fff;
+  width: 14px;
+  height: 14px;
+}
+
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  opacity: unset;
+  background: rgba(255, 255, 255, 0.5);
+}

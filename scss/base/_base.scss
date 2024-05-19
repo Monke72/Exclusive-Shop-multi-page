@@ -1,0 +1,28 @@
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--main-size);
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.container {
+  max-width: 1200px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+.none {
+  display: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
