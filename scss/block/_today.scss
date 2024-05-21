@@ -35,7 +35,7 @@
 
 .today {
   &__top-wrapper {
-    padding-top: 140px;
+    padding-top: var(--padding-bot-block);
     display: flex;
     flex-direction: column;
   }

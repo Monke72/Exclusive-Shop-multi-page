@@ -1,6 +1,6 @@
 .best {
-  padding-top: 70px;
-  padding-bottom: 140px;
+  padding-top: var(--padding-top-block);
+  padding-bottom: var(--padding-bot-block);
   &__top {
     display: flex;
     justify-content: space-between;

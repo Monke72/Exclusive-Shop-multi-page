@@ -1,0 +1,28 @@
+.our {
+  .card-btm__price {
+    padding-top: 2.5px;
+    padding-right: 8px;
+  }
+
+  padding-top: var(--padding-top-block);
+  padding-bottom: var(--padding-bot-block);
+  &__top {
+  }
+
+  &__main {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 60px;
+    column-gap: 30px;
+  }
+  &__all {
+    display: flex;
+    background-color: var(--color-accent);
+    color: var(--color-grey);
+    padding: 16px 48px;
+    border-radius: 4px;
+    margin-inline: auto;
+    margin-top: 60px;
+  }
+}
