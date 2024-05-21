@@ -1,0 +1,23 @@
+.best {
+  padding-top: 70px;
+  padding-bottom: 140px;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+
+  &__btn {
+    background-color: var(--color-accent);
+    color: var(--color-grey);
+    padding: 16px 48px;
+    border-radius: 4px;
+  }
+
+  &__products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

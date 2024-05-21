@@ -238,6 +238,7 @@ body {
   font-size: var(--main-size);
   color: var(--color-dark);
   background-color: var(--color-light);
+  padding-bottom: 20vh;
 }
 
 .container {
@@ -563,6 +564,7 @@ body {
 .today__card-btm__rating-list {
   display: flex;
   gap: 2px;
+  align-items: center;
 }
 .today__card-btm__name {
   font-size: 16px;
@@ -572,6 +574,9 @@ body {
 .today__card-btm__price {
   line-height: 24px;
   color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 .today__card-btm__quantity {
   color: rgba(0, 0, 0, 0.6);
@@ -687,4 +692,227 @@ body {
 
 .any--active {
   fill: red;
+}
+
+.star--half {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 1px;
+}
+
+.categories {
+  padding-bottom: 70px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.categories__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 60px;
+}
+.categories__card {
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 57px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  max-width: 170px;
+  gap: 12px;
+}
+
+.categories--name {
+  padding-top: 80px;
+}
+
+.swiper--cat {
+  width: 46px;
+  height: 46px;
+  background-color: var(--color-gray-alt);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-disabled {
+  opacity: 0.4;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 270px;
+  width: 100%;
+}
+
+.card__top {
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  height: 250px;
+  position: relative;
+  background-color: var(--color-gray-alt);
+}
+
+.card__image {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: end;
+  align-items: end;
+}
+
+.card__btm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-btm__name {
+  padding-top: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.card-btm__price {
+  line-height: 24px;
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-btm__rating {
+  align-items: center;
+  display: flex;
+}
+
+.card-btm__rating-list {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.card-btm__quantity {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 700;
+  padding-top: 2px;
+  padding-left: 8px;
+}
+
+.card__sale {
+  position: absolute;
+  left: 15px;
+  background-color: var(--color-accent);
+  color: var(--color-gray-alt);
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.best {
+  padding-top: 70px;
+  padding-bottom: 140px;
+}
+.best__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 60px;
+}
+.best__btn {
+  background-color: var(--color-accent);
+  color: var(--color-grey);
+  padding: 16px 48px;
+  border-radius: 4px;
+}
+.best__products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.music {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 60px;
+  background-color: var(--color-dark);
+  color: var(--color-grey);
+}
+.music__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 32px;
+  max-width: 443px;
+}
+.music__info-cat {
+  color: var(--color-green);
+  line-height: 20px;
+}
+.music__info-title {
+  font-size: var(--big-size);
+  line-height: 60px;
+  letter-spacing: 4%;
+}
+.music__info-btn {
+  color: var(--color-grey);
+  background-color: var(--color-green);
+  padding: 16px 48px;
+  max-width: 170px;
+  border-radius: 4px;
+}
+.music__image {
+  position: relative;
+}
+
+.timer--item {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  color: var(--color-dark);
+}
+
+.timer--list {
+  display: flex;
+  gap: 24px;
+}
+.timer--list p {
+  font-size: 11px;
+  font-weight: 700;
+}
+.timer--list .time {
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.music__image-item {
+  position: relative;
+  z-index: 2;
+}
+
+.box--shadow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -48%);
 }/*# sourceMappingURL=mainStyles.css.map */

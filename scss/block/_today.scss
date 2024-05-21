@@ -90,9 +90,11 @@
     &__rating {
       align-items: center;
       display: flex;
+
       &-list {
         display: flex;
         gap: 2px;
+        align-items: center;
       }
     }
     &__name {
@@ -103,6 +105,9 @@
     &__price {
       line-height: 24px;
       color: var(--color-accent);
+      display: flex;
+      align-items: center;
+      gap: 12px;
     }
     &__quantity {
       color: rgba(0, 0, 0, 0.6);
@@ -214,7 +219,11 @@
   }
 }
 
-
 .any--active {
   fill: red;
+}
+.star--half {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 1px;
 }

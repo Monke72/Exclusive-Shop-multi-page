@@ -2,4 +2,5 @@
 @import "./scss/base/reset", "./scss/base/vars", "./scss/base/fonts",
   "./scss/base/base", "./scss/base/mixins";
 //blocks
-@import "./scss/block/header", "./scss/block/today";
+@import "./scss/block/header", "./scss/block/today", "./scss/block/catefories",
+  "./scss/block/card", "./scss/block/best", "./scss/block/music";

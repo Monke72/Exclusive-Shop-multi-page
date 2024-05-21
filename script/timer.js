@@ -3,14 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const deadline = new Date(2024, 6, 11);
   // id таймера
   let timerId = null;
-  // склонение числительных
-  function declensionNum(num, words) {
-    return words[
-      num % 100 > 4 && num % 100 < 20
-        ? 2
-        : [2, 0, 1, 1, 1, 2][num % 10 < 5 ? num % 10 : 5]
-    ];
-  }
   // вычисляем разницу дат и устанавливаем оставшееся времени в качестве содержимого элементов
   function countdownTimer() {
     const diff = deadline - new Date();
@@ -40,3 +32,51 @@ document.addEventListener("DOMContentLoaded", function () {
   // вызываем функцию countdownTimer каждую секунду
   timerId = setInterval(countdownTimer, 1000);
 });
+
+var deadline = "2024-07-12";
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    total: t,
+    days: days,
+    hours: hours,
+    minutes: minutes,
+    seconds: seconds,
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var timeinterval = setInterval(function () {
+    var t = getTimeRemaining(endtime);
+    clock.innerHTML = ` 
+
+    <ul class="timer--list">
+  <li class="timer--item">
+    <div class="time">${t.days} </div>
+    <p>Days</p>
+  </li>
+  <li class="timer--item">
+    <div class="time">${t.hours} </div>
+    <p>Hours</p>
+  </li>
+  <li class="timer--item">
+    <div class="time">${t.minutes} </div>
+    <p>Minutes</p>
+  </li>
+  <li class="timer--item">
+    <div class="time">${t.seconds}</div>
+    <p>Seconds</p>
+  </li>
+</ul>`;
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }, 1000);
+}
+
+initializeClock("clockdiv", deadline);
