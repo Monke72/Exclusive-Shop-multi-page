@@ -211,3 +211,23 @@
   opacity: unset;
   background: rgba(255, 255, 255, 0.5);
 }
+.header__main-link {
+  text-decoration: 0.3s;
+  @include hover {
+    color: var(--color-accent);
+  }
+}
+.header__sections-buttons__like {
+  color: unset;
+  display: flex;
+}
+.header__svg {
+  @include hover {
+    fill: red;
+  }
+}
+.header__bascet-icon {
+  @include hover {
+    transform: scale(1.2);
+  }
+}

@@ -12,7 +12,7 @@ body {
 }
 
 .none {
-  display: none;
+  display: none !important;
 }
 .visually-hidden {
   position: absolute;

@@ -203,7 +203,7 @@
   border-radius: 4px;
   color: var(--color-grey);
   display: flex;
-  margin: 60px auto 60px auto;
+  margin: 0px auto 60px auto;
 }
 .today__all {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -226,4 +226,19 @@
   width: 18px;
   height: 18px;
   margin-bottom: 1px;
+}
+.swiper--today {
+  cursor: pointer;
+}
+.today__wrapper {
+  margin-bottom: 60px;
+}
+.today__wrapper-st {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 40px;
+}
+.anyToday {
+  height: auto;
+  max-height: 160px;
 }

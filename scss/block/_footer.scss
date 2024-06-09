@@ -4,6 +4,10 @@
   color: var(--color-grey);
   a {
     color: rgb(250, 250, 250, 0.8);
+    transition-duration: 0.2s;
+    @include hover {
+      color: var(--color-accent);
+    }
   }
 
   &__list {
