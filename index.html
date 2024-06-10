@@ -875,7 +875,9 @@
 
         <div class="best__top">
           <h2 class="title">Best Selling Products</h2>
-          <button class="best__btn">View All</button>
+          <a href="./bestSell/bestSellProduct.html" class="best__btn"
+            >View All</a
+          >
         </div>
 
         <div class="best__products">
@@ -1118,24 +1120,95 @@
       <!-- Best Section -->
 
       <!-- Music Section -->
-      <section class="music container">
-        <div class="music__info">
-          <p class="music__info-cat">Categories</p>
-          <div class="music__info-title">Enhance Your Music Experience</div>
-          <div class="music__info-timer">
-            <div id="clockdiv"></div>
+      <div class="music__wrapper">
+        <section class="music container">
+          <div class="music__info">
+            <p class="music__info-cat">Categories</p>
+            <div class="music__info-title">Enhance Your Music Experience</div>
+            <div class="music__info-timer">
+              <div id="clockdiv"></div>
+            </div>
+            <button class="music__info-btn">Buy Now!</button>
           </div>
-          <button class="music__info-btn">Buy Now!</button>
+          <div class="music__image">
+            <img
+              class="music__image-item"
+              src="./image/music/column.png"
+              alt=""
+            />
+            <img
+              class="box--shadow"
+              src="./image/music/box-shadow.png"
+              alt=""
+            />
+          </div>
+        </section>
+        <div class="window__wrapper">
+          <div class="buy__window">
+            <div class="buy__window-info">
+              <div class="buy__window-info__name">Товар</div>
+              <ul class="buy__window-info__list">
+                <li class="buy__window-info__item">
+                  ID <span class="btm__info">32</span>
+                </li>
+                <li class="buy__window-info__item">
+                  Price <span class="btm__info">4298428</span>
+                </li>
+                <li class="buy__window-info__item">
+                  Quantity <span class="btm__info">323</span>
+                </li>
+                <li class="buy__window-info__item">
+                  Full price <span class="btm__info">32323232</span>
+                </li>
+                <li class="buy__window-info__item">
+                  Delete <span class="btm__info">X</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="product__info">
+              <div class="product__info-image">
+                <img src="./image/music/column.png" alt="" />
+              </div>
+            </div>
+
+            <div class="buy__inputs">
+              <ul class="buy__inputs-list">
+                <li class="buy__inputs-item">
+                  <input
+                    class="buy__input"
+                    placeholder="Введите имя"
+                    type="text"
+                  />
+                </li>
+                <li class="buy__inputs-item">
+                  <input
+                    class="buy__input"
+                    placeholder="Введите телефон"
+                    type="number"
+                  />
+                </li>
+                <li class="buy__inputs-item">
+                  <input
+                    class="buy__input"
+                    placeholder="Введите e-mail"
+                    type="text"
+                  />
+                </li>
+                <li class="buy__inputs-item buy__inputs-item--active">
+                  <button class="buy__input buy__inputs-btn">Buy now</button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="buy__buttons">
+              <button class="more__buy">Buy More</button>
+              <button class="buy__now">Make an order</button>
+            </div>
+          </div>
         </div>
-        <div class="music__image">
-          <img
-            class="music__image-item"
-            src="./image/music/column.png"
-            alt=""
-          />
-          <img class="box--shadow" src="./image/music/box-shadow.png" alt="" />
-        </div>
-      </section>
+      </div>
+
       <!-- Music Section -->
 
       <!-- Our Section -->

@@ -1,0 +1,14 @@
+.card__image-src {
+  max-width: 150px;
+}
+.best__products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 40px;
+}
+h1 {
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  padding-block: 60px;
+}

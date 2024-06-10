@@ -44,14 +44,14 @@ export { vievAll };
 
 todayBtn.addEventListener("click", vievAll);
 
-async function getProducts() {
-  const response = await fetch("products.json");
+async function getProducts(el) {
+  const response = await fetch(el);
   const data = await response.json();
   return data;
 }
 
 const promiseToday = new Promise((resolve, reject) => {
-  resolve(getProducts());
+  resolve(getProducts("products.json"));
 });
 
 promiseToday.then((data) => {
@@ -112,3 +112,7 @@ promiseToday.then((data) => {
 });
 
 // elInHtml();
+
+//All Best
+
+
