@@ -2,6 +2,7 @@ import { swiper } from "./swiper.js";
 
 const buttonLike = document.querySelectorAll(".any");
 console.log(buttonLike);
+const body = document.body;
 
 buttonLike.forEach((el) => {
   el.addEventListener("click", (event) => {
@@ -113,6 +114,49 @@ promiseToday.then((data) => {
 
 // elInHtml();
 
-//All Best
+const delBtn = document.querySelector(".btm__info-btn");
+const makeOrder = document.querySelector(".buy__now");
 
+function delEl() {
+  document.querySelectorAll(".btm__info").forEach((el) => {
+    el.classList.add("none");
+    document.querySelector(".product__info").classList.add("none");
+    document.querySelector(".buy__inputs-btn").classList.add("not--active");
+  });
+}
 
+delBtn.addEventListener("click", delEl);
+
+makeOrder.addEventListener("click", () => {
+  makeOrder.textContent = "Its function now not ready";
+  makeOrder.classList.add("not--active");
+});
+
+//Phone mask
+mask("[data-tel-input]");
+
+// Удаляем '+' если больше ничего не введено, чтобы показать placeholder
+const phoneInputs = document.querySelectorAll("[data-tel-input]");
+phoneInputs.forEach((input) => {
+  input.addEventListener("input", () => {
+    if (input.value == "+") input.value = "";
+  });
+  input.addEventListener("blur", () => {
+    if (input.value == "+") input.value = "";
+  });
+});
+
+const musBtn = document.querySelectorAll(".music__info-btn");
+musBtn.forEach((el) => {
+  el.addEventListener("click", () => {
+    document.querySelector(".window__wrapper").classList.toggle("none");
+    body.classList.toggle("overflow");
+  });
+});
+
+window.addEventListener("click", function (event) {
+  if (event.target === document.querySelector(".window__wrapper")) {
+    document.querySelector(".window__wrapper").classList.add("none");
+    body.classList.remove("overflow");
+  }
+});

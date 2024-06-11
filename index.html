@@ -1143,8 +1143,10 @@
             />
           </div>
         </section>
-        <div class="window__wrapper">
+
+        <div class="window__wrapper none">
           <div class="buy__window">
+            <button class="btn__close music__info-btn">X</button>
             <div class="buy__window-info">
               <div class="buy__window-info__name">Товар</div>
               <ul class="buy__window-info__list">
@@ -1161,7 +1163,7 @@
                   Full price <span class="btm__info">32323232</span>
                 </li>
                 <li class="buy__window-info__item">
-                  Delete <span class="btm__info">X</span>
+                  Delete <span class="btm__info btm__info-btn">X</span>
                 </li>
               </ul>
             </div>
@@ -1184,8 +1186,10 @@
                 <li class="buy__inputs-item">
                   <input
                     class="buy__input"
-                    placeholder="Введите телефон"
-                    type="number"
+                    type="text"
+                    id="phone"
+                    placeholder="Введите номер телефона"
+                    data-tel-input
                   />
                 </li>
                 <li class="buy__inputs-item">
@@ -1202,7 +1206,9 @@
             </div>
 
             <div class="buy__buttons">
-              <button class="more__buy">Buy More</button>
+              <form action="./bestSell/bestSellProduct.html" target="_blank">
+                <button class="more__buy">Buy More</button>
+              </form>
               <button class="buy__now">Make an order</button>
             </div>
           </div>
@@ -1669,7 +1675,9 @@
           </div>
         </div>
 
-        <button class="our__all">View All Products</button>
+        <form action="./bestSell/bestSellProduct.html" target="_blank">
+          <button class="our__all">View All Products</button>
+        </form>
       </section>
       <!-- Our Section -->
 
@@ -1867,6 +1875,8 @@
       </p>
     </div>
   </body>
+  <script src="./plagins/phoneMask/mask.js"></script>
+  <script src="./plagins/phoneMask/mask_list.js"></script>
   <script src="./script/swiper.js" type="module"></script>
   <script src="./script/script.js " type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

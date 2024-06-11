@@ -13,6 +13,7 @@
 }
 .buy {
   &__window {
+    position: relative;
     max-width: 850px;
     padding: 50px;
     z-index: 11;
@@ -90,7 +91,7 @@
 
 .btm__info {
   position: absolute;
-  top: 60px;
+  top: 70px;
 }
 .buy__input {
   width: 380px;
@@ -110,14 +111,55 @@ input::-webkit-inner-spin-button {
   justify-content: start;
   display: flex;
   align-items: center;
+  color: var(--color-grey);
+  background-color: var(--color-accent);
 }
 
 .buy__buttons {
   display: flex;
   justify-content: end;
   padding-top: 50px;
+  gap: 40px;
 }
 
 .more__buy {
+  height: 100%;
+  border: 0;
   width: 250px;
+  padding: 15px 10px;
+  background-color: var(--color-accent);
+  color: var(--color-grey);
+}
+.buy__now {
+  width: 180px;
+  border: 0;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-inline: 15px;
+}
+
+.btm__info-btn {
+  cursor: pointer;
+  @include hover {
+    color: var(--color-accent);
+  }
+}
+.not--active {
+  opacity: 0.5;
+  cursor: unset;
+}
+.btn__close {
+  border: 0;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: var(--color-accent);
+  background-color: unset;
+  padding: unset;
+  max-width: unset;
+  border-radius: unset;
+}
+.overflow {
+  overflow: hidden;
 }
