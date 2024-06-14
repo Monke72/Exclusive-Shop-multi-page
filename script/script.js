@@ -160,3 +160,14 @@ window.addEventListener("click", function (event) {
     body.classList.remove("overflow");
   }
 });
+
+function addToBasket(el) {
+  const card = el.target.closest(".card").innerHTML;
+  document
+    .querySelector(".wishlist__wrapper")
+    .insertAdjacentHTML("beforebegin", card);
+}
+
+buttonLike.forEach((el) => {
+  el.addEventListener("click", addToBasket);
+});

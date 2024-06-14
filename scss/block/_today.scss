@@ -214,13 +214,15 @@
   @include hover {
     svg {
       color: #fff;
-      fill: red;
+      fill: rgba(219, 68, 68, 0.8);
     }
   }
 }
 
 .any--active {
-  fill: red;
+  fill: rgb(219, 68, 68);
+  color: #fff;
+  transform: scale(1.2);
 }
 .star--half {
   width: 18px;

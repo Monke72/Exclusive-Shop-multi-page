@@ -1,8 +1,9 @@
 .music {
   display: flex;
+  gap: 30px;
   align-items: center;
-  justify-content: space-between;
-  padding: var(--padding-top-block) 60px;
+  justify-content: center;
+  padding: var(--padding-top-block) 0px;
   background-color: var(--color-dark);
   color: var(--color-grey);
   &__info {
@@ -72,4 +73,3 @@
 .music__wrapper {
   position: relative;
 }
-

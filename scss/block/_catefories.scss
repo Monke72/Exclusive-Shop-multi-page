@@ -10,6 +10,7 @@
   }
 
   &__card {
+    flex-shrink: unset;
     line-height: 24px;
     display: flex;
     flex-direction: column;

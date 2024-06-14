@@ -4,13 +4,14 @@
     padding-top: 60px;
     display: flex;
     justify-content: space-between;
+    gap: 30px;
   }
 
   &__info-ps {
     padding: 32px;
     background: url(./../image/featured/ps5.png) no-repeat;
     background-size: cover;
-    width: 570px;
+    width: 525px;
     height: 600px;
     display: flex;
   }

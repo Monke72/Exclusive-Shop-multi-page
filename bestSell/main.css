@@ -12,3 +12,20 @@ h1 {
   justify-content: center;
   padding-block: 60px;
 }
+.bascet {
+  position: fixed;
+  display: flex;
+  gap: 15px;
+  justify-content: end;
+  top: 50px;
+  right: 10%;
+}
+.best__salling {
+  position: relative;
+}
+
+.buttons__show:hover {
+  .show {
+    transform: scale(1.2);
+  }
+}

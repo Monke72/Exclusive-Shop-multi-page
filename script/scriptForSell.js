@@ -1,3 +1,13 @@
+const buttonLike = document.querySelectorAll(".any");
+console.log(buttonLike);
+const body = document.body;
+
+buttonLike.forEach((el) => {
+  el.addEventListener("click", (event) => {
+    event.target.closest(".any").classList.toggle("any--active");
+  }); //Поднимаемся по элемнтам выше и ищем елемент к лассом any когда находим добаувлем класс any--active
+});
+
 async function getProducts(el) {
   const response = await fetch(el);
   const data = await response.json();
@@ -37,7 +47,7 @@ promiseAllSell.then((data) => {
                 </svg>
               </button>
               <button class="buttons__show card__btn">
-                <img src="../icon/today/show.svg" alt="" />
+                <img class = "show" src="../icon/today/show.svg" alt="" />
               </button>
             </div>
           </div>

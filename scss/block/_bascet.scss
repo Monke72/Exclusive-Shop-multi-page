@@ -1,0 +1,107 @@
+.wishlist {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    align-items: center;
+  }
+
+  &__quant {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &__wrapper {
+  }
+}
+.foryou {
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 76px;
+  }
+
+  &__btn {
+  }
+}
+.mini {
+  &__title {
+  }
+
+  &__title-icon {
+  }
+}
+.best {
+  &__products {
+  }
+}
+.card {
+  &__top {
+  }
+
+  &__image {
+  }
+
+  &__btn {
+  }
+}
+.card-buttons {
+}
+.buttons {
+  &__like {
+  }
+
+  &__show {
+  }
+}
+.any {
+}
+.card-btm {
+  &__name {
+  }
+
+  &__price {
+  }
+
+  &__rating {
+  }
+
+  &__rating-list {
+  }
+
+  &__rating-item {
+  }
+
+  &__quantity {
+  }
+}
+.old--price {
+}
+.star--half {
+}
+
+.quantity {
+  position: relative;
+  right: 2px;
+}
+
+.foryou__main-title {
+  color: var(--color-dark);
+  padding-bottom: 0;
+}
+
+.wishlist__btn,
+.foryou__btn {
+  padding: 16px 48px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  @include hover {
+    transform: scale(1.05);
+  }
+}
+
+.footer--whishlist {
+  margin-top: 140px;
+}

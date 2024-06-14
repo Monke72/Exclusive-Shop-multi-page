@@ -1,8 +1,6 @@
-@charset "UTF-8";
-/**
-  Нормализация блочной модели
- */
-*,
+.card__image-src {
+  max-width: 150px;
+}/*# sourceMappingURL=mainStyles.css.map */,
 *::before,
 *::after,
 *:focus,
@@ -240,6 +238,9 @@ body {
   font-size: var(--main-size);
   color: var(--color-dark);
   background-color: var(--color-light);
+}
+
+* {
   border: 0;
 }
 
@@ -516,6 +517,10 @@ body {
   }
 }
 
+.bascet__form {
+  display: flex;
+}
+
 .timer__items {
   display: flex;
   font-size: var(--title-size);
@@ -725,18 +730,20 @@ body {
 @media (hover: hover) {
   .buttons__like:hover svg {
     color: #fff;
-    fill: red;
+    fill: rgba(219, 68, 68, 0.8);
   }
 }
 @media (hover: none) {
   .buttons__like:active svg {
     color: #fff;
-    fill: red;
+    fill: rgba(219, 68, 68, 0.8);
   }
 }
 
 .any--active {
-  fill: red;
+  fill: rgb(219, 68, 68);
+  color: #fff;
+  transform: scale(1.2);
 }
 
 .star--half {
@@ -775,6 +782,7 @@ body {
   padding-bottom: 60px;
 }
 .categories__card {
+  flex-shrink: unset;
   line-height: 24px;
   display: flex;
   flex-direction: column;
@@ -928,9 +936,10 @@ body {
 
 .music {
   display: flex;
+  gap: 30px;
   align-items: center;
-  justify-content: space-between;
-  padding: var(--padding-top-block) 60px;
+  justify-content: center;
+  padding: var(--padding-top-block) 0px;
   background-color: var(--color-dark);
   color: var(--color-grey);
 }
@@ -1033,12 +1042,13 @@ body {
   padding-top: 60px;
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 .featured__info-ps {
   padding: 32px;
   background: url(./../image/featured/ps5.png) no-repeat;
   background-size: cover;
-  width: 570px;
+  width: 525px;
   height: 600px;
   display: flex;
 }
@@ -1420,4 +1430,54 @@ input::-webkit-inner-spin-button {
 
 .overflow {
   overflow: hidden;
+}
+
+.wishlist__top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  align-items: center;
+}
+.wishlist__quant {
+  font-size: 20px;
+  font-weight: 400;
+}
+.foryou__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 76px;
+}
+.quantity {
+  position: relative;
+  right: 2px;
+}
+
+.foryou__main-title {
+  color: var(--color-dark);
+  padding-bottom: 0;
+}
+
+.wishlist__btn,
+.foryou__btn {
+  padding: 16px 48px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+@media (hover: hover) {
+  .wishlist__btn:hover,
+  .foryou__btn:hover {
+    transform: scale(1.05);
+  }
+}
+@media (hover: none) {
+  .wishlist__btn:active,
+  .foryou__btn:active {
+    transform: scale(1.05);
+  }
+}
+
+.footer--whishlist {
+  margin-top: 140px;
 }/*# sourceMappingURL=mainStyles.css.map */
