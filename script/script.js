@@ -1,5 +1,3 @@
-import { swiper } from "./swiper.js";
-
 const buttonLike = document.querySelectorAll(".any");
 console.log(buttonLike);
 const body = document.body;
@@ -40,8 +38,6 @@ function vievAll() {
   document.querySelector(".today__wrapper").classList.add("today__wrapper-st");
   document.querySelector(".swiper").classList.remove("mySwiper2");
 }
-
-export { vievAll };
 
 todayBtn.addEventListener("click", vievAll);
 
@@ -161,13 +157,16 @@ window.addEventListener("click", function (event) {
   }
 });
 
+let cardArray = [];
+
 function addToBasket(el) {
   const card = el.target.closest(".card").innerHTML;
-  document
-    .querySelector(".wishlist__wrapper")
-    .insertAdjacentHTML("beforebegin", card);
+  cardArray.push(card);
+  return cardArray, console.log(cardArray.join());
 }
 
 buttonLike.forEach((el) => {
   el.addEventListener("click", addToBasket);
 });
+
+export { cardArray, vievAll };
