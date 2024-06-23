@@ -1,6 +1,8 @@
-.card__image-src {
-  max-width: 150px;
-}/*# sourceMappingURL=mainStyles.css.map */,
+@charset "UTF-8";
+/**
+  Нормализация блочной модели
+ */
+*,
 *::before,
 *::after,
 *:focus,
@@ -1443,6 +1445,13 @@ input::-webkit-inner-spin-button {
   font-size: 20px;
   font-weight: 400;
 }
+.wishlist__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
 .foryou__title {
   display: flex;
   align-items: center;

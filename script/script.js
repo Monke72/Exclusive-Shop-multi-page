@@ -1,12 +1,13 @@
 const buttonLike = document.querySelectorAll(".any");
-console.log(buttonLike);
 const body = document.body;
+const card = document.querySelectorAll(".card");
+const cardAny = document.querySelectorAll(".card");
 
-buttonLike.forEach((el) => {
-  el.addEventListener("click", (event) => {
-    event.target.closest(".any").classList.toggle("any--active");
-  }); //Поднимаемся по элемнтам выше и ищем елемент к лассом any когда находим добаувлем класс any--active
-});
+for (let i = 1; i < card.length; i++) {
+  card.forEach((el) => {
+    el.setAttribute("id", i++);
+  });
+}
 
 const about = document.querySelector(".about");
 
@@ -49,12 +50,14 @@ async function getProducts(el) {
 
 const promiseToday = new Promise((resolve, reject) => {
   resolve(getProducts("products.json"));
+  buttonLike.forEach((el) => {
+    el.addEventListener("click", addToBasket);
+  });
 });
 
 promiseToday.then((data) => {
   data.forEach((el) => {
     const { img, discount, title, price } = el;
-    console.log(discount);
     const adjastHtml = `
     <div class="card swiper-slide ">
               <div class="card__top">
@@ -157,16 +160,65 @@ window.addEventListener("click", function (event) {
   }
 });
 
-let cardArray = [];
-
 function addToBasket(el) {
-  const card = el.target.closest(".card").innerHTML;
-  cardArray.push(card);
-  return cardArray, console.log(cardArray.join());
+  let cardArray = [];
+
+  const card = el.target.closest(".card");
+
+  console.log(card);
+  if (!card) return;
+
+  if (JSON.parse(localStorage.getItem("basket"))) {
+    cardArray = JSON.parse(localStorage.getItem("basket"));
+  } else {
+    cardArray = [];
+  }
+  const cardId = card.id;
+  if (cardArray.includes(cardId)) {
+    console.log("Карта уже добавлена в корзину");
+    return;
+  }
+
+  cardArray.push(cardId);
+  const newArr = JSON.stringify(cardArray);
+  localStorage.setItem("basket", newArr);
+  isInBasket();
+  basket();
 }
 
-buttonLike.forEach((el) => {
-  el.addEventListener("click", addToBasket);
-});
+function isInBasket() {
+  if (!localStorage.getItem("basket")) {
+    console.log("bascet clear");
+  } else {
+    const getLS = JSON.parse(localStorage.getItem("basket"));
 
-export { cardArray, vievAll };
+    for (let key of getLS) {
+      const elInBasket = document.getElementById(`${key}`);
+      elInBasket.querySelector(".any").classList.add("any--active");
+    }
+  }
+}
+isInBasket();
+
+function basket() {
+  let cardArr = [];
+  if (!localStorage.getItem("basket")) {
+    console.log("bascet clear");
+  } else {
+    const getLS = JSON.parse(localStorage.getItem("basket"));
+    card.forEach((el) => {
+      for (let key of getLS) {
+        console.log(card);
+        if (key === el.id) {
+          el.innerHTML = `<div id = "${el.id}" >${el.innerHTML}</div>`;
+          cardArr.push(el.innerHTML);
+        }
+      }
+    });
+
+    localStorage.setItem("card", cardArr.join(""));
+  }
+}
+
+const test = localStorage.getItem("card");
+console.log(test);
