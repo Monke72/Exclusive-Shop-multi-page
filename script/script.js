@@ -210,7 +210,7 @@ function basket() {
       for (let key of getLS) {
         console.log(card);
         if (key === el.id) {
-          el.innerHTML = `<div id = "${el.id}" >${el.innerHTML}</div>`;
+          el.innerHTML = `<div id = "${el.id}" class = "${el.className}" >${el.innerHTML}</div>`;
           cardArr.push(el.innerHTML);
         }
       }

@@ -12,6 +12,10 @@ body {
   max-width: 1200px;
   padding-inline: 15px;
   margin-inline: auto;
+
+  @include desktop {
+    max-width: 1024px;
+  }
 }
 
 .none {

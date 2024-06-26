@@ -235,3 +235,13 @@
 .bascet__form {
   display: flex;
 }
+
+.header__swiper-image {
+  @include desktop {
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.3);
+  }
+}

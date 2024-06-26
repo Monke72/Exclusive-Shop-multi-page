@@ -26,7 +26,6 @@
   &__more-women {
     position: relative;
     background: url(./../image/featured/woman.png) no-repeat;
-    width: 100%;
     height: 100%;
     display: flex;
   }
@@ -87,4 +86,8 @@
 .featured__more-prod__sneak,
 .featured__more-prod__perf {
   padding: 24px;
+}
+
+.featured__more-women__info {
+  padding-bottom: 10px;
 }

@@ -3,6 +3,16 @@
   flex-direction: column;
   max-width: 270px;
   width: 100%;
+
+  @include desktop {
+    max-width: 220px;
+  }
+}
+
+.card__image {
+  @include desktop {
+    max-width: 150px;
+  }
 }
 .card__top {
   border-radius: 4px;
