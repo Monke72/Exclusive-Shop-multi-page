@@ -1,4 +1,10 @@
 .best {
+  .card-btm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   padding-top: var(--padding-top-block);
   padding-bottom: var(--padding-bot-block);
   &__top {
@@ -20,5 +26,10 @@
     justify-content: space-between;
     align-items: center;
     gap: 15px;
+    @include mobile {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
   }
 }

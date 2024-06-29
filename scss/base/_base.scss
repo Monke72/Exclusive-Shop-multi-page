@@ -16,6 +16,12 @@ body {
   @include desktop {
     max-width: 1024px;
   }
+  @include tablet {
+    max-width: 830px;
+  }
+  @include mobile {
+    max-width: 610px;
+  }
 }
 
 .none {

@@ -18,4 +18,18 @@
   --font-family-base: "pRegular", sans-serif;
   --font-family-regular: "pRegular", sans-serif;
   --font-family-medium: "pMedium", sans-serif;
+
+  @include desktop {
+    --big-size: 42px;
+  }
+  @include tablet {
+    --padding-bot-block: 90px;
+    --padding-top-block: 50px;
+    --big-size: 36px;
+  }
+  @include mobile {
+    --big-size: 40px;
+    --big-lh: 48px;
+    --title-size: 30px;
+  }
 }

@@ -57,20 +57,32 @@
         <div class="header__sections-wrapper">
           <div class="header__sections container">
             <div class="header__sections-name">Exclusive</div>
-            <ul class="header__sections-list">
-              <li class="header__sections-item">
-                <a class="header__sections-link" href="">Home</a>
-              </li>
-              <li class="header__sections-item">
-                <a class="header__sections-link" href="">Contact</a>
-              </li>
-              <li class="header__sections-item">
-                <a class="header__sections-link about" href="">About</a>
-              </li>
-              <li class="header__sections-item">
-                <a class="header__sections-link" href="">Sign Up</a>
-              </li>
-            </ul>
+
+            <div class="header__sections-wrapper__mobile">
+              <div class="icon__menu">
+                <img
+                  class="icon__image"
+                  src="./icon/header/header__list.png"
+                  alt=""
+                />
+              </div>
+
+              <ul class="header__sections-list">
+                <li class="header__sections-item">
+                  <a class="header__sections-link" href="">Home</a>
+                </li>
+                <li class="header__sections-item">
+                  <a class="header__sections-link" href="">Contact</a>
+                </li>
+                <li class="header__sections-item">
+                  <a class="header__sections-link about" href="">About</a>
+                </li>
+                <li class="header__sections-item">
+                  <a class="header__sections-link" href="">Sign Up</a>
+                </li>
+              </ul>
+            </div>
+
             <div class="header__sections-buttons">
               <div class="header__sections-buttons__wrapper-input">
                 <input
@@ -1122,8 +1134,8 @@
       <!-- Best Section -->
 
       <!-- Music Section -->
-      <div class="music__wrapper">
-        <section class="music container">
+      <div class="music__wrapper container">
+        <section class="music">
           <div class="music__info">
             <p class="music__info-cat">Categories</p>
             <div class="music__info-title">Enhance Your Music Experience</div>
@@ -1778,7 +1790,7 @@
         </div>
         <div class="btn__wrapper">
           <button class="btn__top">
-            <img src="./icon/info/strTop.svg" alt="" />
+            <img class="str__top" src="./icon/info/strTop.svg" alt="" />
           </button>
         </div>
       </section>

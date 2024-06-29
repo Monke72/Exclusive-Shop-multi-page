@@ -13,6 +13,9 @@
   @include desktop {
     max-width: 150px;
   }
+  @include mobile {
+    max-width: 115px;
+  }
 }
 .card__top {
   border-radius: 4px;
@@ -23,6 +26,12 @@
   height: 250px;
   position: relative;
   background-color: var(--color-gray-alt);
+  @include tablet {
+    height: 215px;
+  }
+  @include mobile {
+    height: 160px;
+  }
 }
 .card__image {
   position: absolute;
@@ -48,6 +57,9 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
+  @include tablet {
+    font-size: 15px;
+  }
 }
 .card-btm__price {
   line-height: 24px;

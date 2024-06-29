@@ -17,8 +17,8 @@ function smoothScrollTo(element) {
   window.scrollTo({ top: positionY, behavior: "smooth" });
 }
 
-document.addEventListener("click", function (event) {
-  if (event.target.classList.contains("btn__top")) {
+window.addEventListener("click", function (event) {
+  if (event.target.closest(".btn__top")) {
     smoothScrollTo(".header"),
       setTimeout(() => {
         about.classList.add("red");
@@ -222,3 +222,14 @@ function basket() {
 
 const test = localStorage.getItem("card");
 console.log(test);
+
+const headerMenu = document.querySelector(".icon__menu");
+
+const headerList = document.querySelector(".header__sections-list");
+
+window.addEventListener("click", function (event) {
+  if (event.target.closest(".icon__menu")) {
+    headerList.classList.toggle("display__block");
+  } else {
+  }
+});

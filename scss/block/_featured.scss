@@ -5,6 +5,8 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    @include mobile {
+    }
   }
 
   &__info-ps {
@@ -14,6 +16,16 @@
     width: 525px;
     height: 600px;
     display: flex;
+    @include desktop {
+      height: 500px;
+    }
+    @include tablet {
+      height: 450px;
+    }
+    @include mobile {
+      height: 290px;
+      width: 63%;
+    }
   }
 
   &__more {
@@ -28,6 +40,9 @@
     background: url(./../image/featured/woman.png) no-repeat;
     height: 100%;
     display: flex;
+    @include mobile {
+      background-position: center;
+    }
   }
 
   &__more-prod {
@@ -35,6 +50,10 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    @include mobile {
+      padding-top: 20px;
+      gap: 20px;
+    }
 
     &__sneak,
     &__perf {
@@ -42,13 +61,30 @@
       background-position: center !important;
       max-width: 270px;
       height: 284px;
+      @include desktop {
+        height: 235px;
+      }
     }
 
     &__sneak {
       background: url(./../image/featured/columns.png) no-repeat;
+      @include tablet {
+        background-size: cover;
+        height: 185px;
+      }
+      @include mobile {
+        height: 135px;
+      }
     }
     &__perf {
       background: url(./../image/featured/parfum.png) no-repeat;
+      @include tablet {
+        background-size: cover;
+        height: 185px;
+      }
+      @include mobile {
+        height: 135px;
+      }
     }
   }
 }
@@ -56,6 +92,12 @@
 .featured--title {
   font-size: 24px;
   font-weight: 600;
+  @include tablet {
+    font-size: 22px;
+  }
+  @include mobile {
+    font-size: 18px;
+  }
 }
 .featured--text {
   font-size: 14px;
@@ -80,12 +122,18 @@
   align-items: start;
   gap: 8px;
   width: 100%;
+  @include desktop {
+    gap: 3px;
+  }
+  @include mobile {
+    gap: 0px;
+  }
 }
 
 .featured__more-women,
 .featured__more-prod__sneak,
 .featured__more-prod__perf {
-  padding: 24px;
+  padding: 13px;
 }
 
 .featured__more-women__info {
