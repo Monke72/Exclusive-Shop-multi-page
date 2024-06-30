@@ -6,6 +6,7 @@ body {
 }
 * {
   border: 0;
+  // outline: 1px solid green !important;
 }
 
 .container {
@@ -21,6 +22,9 @@ body {
   }
   @include mobile {
     max-width: 610px;
+  }
+  @include mobile-s {
+    width: 361px;
   }
 }
 

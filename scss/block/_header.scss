@@ -14,6 +14,11 @@
       justify-content: space-between;
       font-size: 13px;
     }
+    @include mobile-s {
+      justify-content: center;
+      gap: 10px;
+      font-size: 12px;
+    }
 
     &__info {
       span {
@@ -37,10 +42,13 @@
   }
 
   &-language {
-    right: 15px;
     display: flex;
     align-items: center;
     gap: 11px;
+  }
+  @include mobile-s {
+    padding-right: 20px;
+    gap: 5px;
   }
 }
 
@@ -50,6 +58,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 40px 15px 16.25px 15px;
+    @include mobile-s {
+      justify-content: center;
+      gap: 20px;
+    }
 
     &-wrapper {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -62,6 +74,9 @@
     line-height: 24px;
     @include mobile {
       font-size: 22px;
+    }
+    @include mobile-s {
+      font-size: 20px;
     }
   }
 
@@ -174,6 +189,7 @@
     width: 217px;
     padding: 42px 24px 0 0;
     border-right: 1px solid rgba(216, 186, 186, 0.1);
+
     @include tablet {
       text-align: center;
       display: grid;
@@ -182,6 +198,10 @@
       width: unset;
       text-wrap: nowrap;
       grid-template-columns: repeat(3, 1fr);
+    }
+    @include mobile-s {
+      padding: 42px 0 0 0;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
@@ -219,11 +239,18 @@
       padding-left: 45px;
       gap: 10px;
     }
+    @include mobile-s {
+      padding-left: 20px;
+      padding-block: 25px;
+    }
 
     &__name {
       display: flex;
       align-items: center;
       gap: 24px;
+      @include mobile-s {
+        gap: 5px;
+      }
     }
 
     &__title {
@@ -236,8 +263,14 @@
       display: flex;
       align-items: center;
       gap: 11px;
+      @include mobile-s {
+        font-size: 14px;
+      }
     }
   }
+}
+.header__swiper-info__title {
+  font-size: 25px;
 }
 
 .apple__image {
@@ -306,7 +339,10 @@
     transform: unset;
   }
   @include mobile {
-    transform: scale(1.3);
+    transform: scale(1);
+  }
+  @include mobile-s {
+    transform: scale(1);
   }
 }
 .header__main-item {
@@ -327,6 +363,7 @@
 .header__up-main__info {
   @include mobile-s {
     text-align: center;
+    max-width: 245px;
   }
 }
 .header__sections-list {
@@ -343,6 +380,17 @@
 }
 .icon__image {
   width: 30px;
+  @include mobile-s {
+    width: 25px;
+  }
+}
+
+.header__menu-close {
+  cursor: pointer;
+  width: 25px;
+  @include mobile-s {
+    width: 22px;
+  }
 }
 .icon__menu {
   @include mobile-s {
@@ -360,5 +408,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+.header__up-language-icon {
+  width: 13px;
+}
+.last--child {
+  @include mobile-s {
+    position: absolute;
+    transform: translate(65%, -25%);
   }
 }

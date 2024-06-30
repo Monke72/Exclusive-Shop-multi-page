@@ -228,8 +228,13 @@ const headerMenu = document.querySelector(".icon__menu");
 const headerList = document.querySelector(".header__sections-list");
 
 window.addEventListener("click", function (event) {
-  if (event.target.closest(".icon__menu")) {
+  if (
+    event.target.closest(".icon__menu") ||
+    event.target.closest(".icon__close")
+  ) {
     headerList.classList.toggle("display__block");
+    document.querySelector(".icon__menu").classList.toggle("visually-hidden");
+    document.querySelector(".icon__close").classList.toggle("visually-hidden");
   } else {
   }
 });

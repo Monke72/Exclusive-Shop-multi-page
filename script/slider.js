@@ -8,6 +8,10 @@ export let swiper = new Swiper(".mySwiper", {
 
 var swiper2 = new Swiper(".mySwiper2", {
   breakpoints: {
+    400: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
     640: {
       slidesPerView: 3,
       spaceBetween: 25,
@@ -43,6 +47,10 @@ var swiper3 = new Swiper(".mySwiper3", {
   },
 
   breakpoints: {
+    400: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
     640: {
       slidesPerView: 3,
       spaceBetween: 28,

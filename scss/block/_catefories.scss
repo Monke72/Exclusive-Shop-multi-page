@@ -28,16 +28,22 @@
       border: 0;
       border-radius: 10px;
     }
+    @include mobile-s {
+      padding: 23px 54px;
+    }
   }
 }
 
 .categories--name {
   padding-top: 80px;
+  @include mobile-s {
+    padding-top: 35px;
+  }
 }
 
 .swiper--cat {
-  width: 46px;
-  height: 46px;
+  width: var(--swiper-btn-size);
+  height: var(--swiper-btn-size);
   background-color: var(--color-gray-alt);
   border-radius: 50%;
   display: flex;

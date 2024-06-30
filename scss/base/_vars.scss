@@ -19,6 +19,8 @@
   --font-family-regular: "pRegular", sans-serif;
   --font-family-medium: "pMedium", sans-serif;
 
+  --swiper-btn-size: 46px;
+
   @include desktop {
     --big-size: 42px;
   }
@@ -31,5 +33,13 @@
     --big-size: 40px;
     --big-lh: 48px;
     --title-size: 30px;
+  }
+  @include mobile-s {
+    --big-size: 30px;
+    --big-lh: 36px;
+    --title-size: 24px;
+    --padding-bot-block: 60px;
+    --padding-top-block: 35px;
+    --swiper-btn-size: 40px;
   }
 }

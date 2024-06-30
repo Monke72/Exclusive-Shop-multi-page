@@ -3,6 +3,9 @@
   font-size: var(--title-size);
   line-height: 30px;
   align-items: end;
+  @include mobile-s {
+    max-width: 272px;
+  }
 }
 .timer__item {
   font-weight: 600;
@@ -12,6 +15,12 @@
   margin-right: 10px;
   padding-bottom: 6px;
   text-align: center;
+  @include mobile-s {
+    font-size: 20px;
+    min-width: 25px;
+    margin-left: 13px;
+    margin-right: 14px;
+  }
 }
 .timer__item::before {
   font-size: 12px;
@@ -25,6 +34,9 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 600;
+  @include mobile-s {
+    font-size: 12px;
+  }
 }
 .timer__item:not(:last-child)::after {
   content: ":";
@@ -158,6 +170,9 @@
   @include mobile {
     line-height: 40px;
   }
+  @include mobile-s {
+    line-height: 32px;
+  }
 }
 
 .timer__title {
@@ -193,8 +208,8 @@
 .swiper-button-next,
 .swiper-button-prev {
   all: unset;
-  width: 46px;
-  height: 46px;
+  width: var(--swiper-btn-size);
+  height: var(--swiper-btn-size);
   background-color: var(--color-gray-alt);
   border-radius: 50%;
   display: flex;
