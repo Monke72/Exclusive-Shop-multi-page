@@ -130,7 +130,7 @@
 .header__sections-buttons__wrapper-input {
   position: relative;
   &::after {
-    content: url(./../../icon/header/search.svg);
+    content: url(./../icon/header/search.svg);
     position: absolute;
     right: 0;
     top: 0;
