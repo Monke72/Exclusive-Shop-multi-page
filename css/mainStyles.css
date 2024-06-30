@@ -1985,6 +1985,7 @@ body {
        column-gap: 30px;
   row-gap: 30px;
 }
+
 .product__info-image {
   max-width: 150px;
 }
@@ -1993,6 +1994,7 @@ body {
   justify-content: end;
   gap: 90px;
 }
+
 .btm__info {
   position: absolute;
   top: 70px;
@@ -2102,8 +2104,13 @@ input::-webkit-inner-spin-button {
   grid-template-columns: repeat(4, 1fr);
   -moz-column-gap: 30px;
        column-gap: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   row-gap: 35px;
+}
+@media (max-width: 640px) {
+  .wishlist__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .foryou__title {
@@ -2113,6 +2120,7 @@ input::-webkit-inner-spin-button {
   justify-content: space-between;
   padding-bottom: 76px;
 }
+
 .quantity {
   position: relative;
   right: 2px;
@@ -2128,6 +2136,7 @@ input::-webkit-inner-spin-button {
   padding: 16px 48px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 12px 30px;
 }
 @media (hover: hover) {
   .wishlist__btn:hover,
