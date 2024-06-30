@@ -196,6 +196,18 @@ input[type=submit] {
   padding: 0;
 }
 
+.btn,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.btn:focus,
+button:focus {
+  outline: none;
+}
+
 :root {
   --color-light: #ffffff;
   --color-dark: #000000;
@@ -468,7 +480,7 @@ body {
   position: relative;
 }
 .header__sections-buttons__wrapper-input::after {
-  content: url(./../../icon/header/search.svg);
+  content: url(./../icon/header/search.svg);
   position: absolute;
   right: 0;
   top: 0;

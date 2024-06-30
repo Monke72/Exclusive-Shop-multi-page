@@ -195,3 +195,14 @@ input[type="submit"] {
   cursor: pointer;
   padding: 0;
 }
+.btn,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.btn:focus,
+button:focus {
+  outline: none;
+}
