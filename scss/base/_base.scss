@@ -4,15 +4,32 @@ body {
   color: var(--color-dark);
   background-color: var(--color-light);
 }
+* {
+  border: 0;
+  // outline: 1px solid green !important;
+}
 
 .container {
   max-width: 1200px;
   padding-inline: 15px;
   margin-inline: auto;
+
+  @include desktop {
+    max-width: 1024px;
+  }
+  @include tablet {
+    max-width: 830px;
+  }
+  @include mobile {
+    max-width: 610px;
+  }
+  @include mobile-s {
+    width: 361px;
+  }
 }
 
 .none {
-  display: none;
+  display: none !important;
 }
 .visually-hidden {
   position: absolute;

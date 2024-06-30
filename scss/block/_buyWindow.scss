@@ -1,0 +1,140 @@
+.window__wrapper {
+  font-size: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buy {
+  &__window {
+    position: relative;
+    max-width: 850px;
+    padding: 50px;
+    z-index: 11;
+    background-color: var(--color-gray-alt);
+    box-shadow: 3px 5px 26px 2px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 3px 5px 26px 2px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 3px 5px 26px 2px rgba(0, 0, 0, 0.7);
+  }
+
+  &__window-info {
+    justify-content: space-between;
+    display: flex;
+    &__list {
+      display: flex;
+      gap: 50px;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+  }
+
+  &__inputs {
+    padding-top: 50px;
+  }
+
+  &__inputs-list {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+}
+.product {
+  &__info-image {
+    max-width: 150px;
+  }
+
+  &__info-list {
+    display: flex;
+    justify-content: end;
+    gap: 90px;
+  }
+}
+
+.btm__info {
+  position: absolute;
+  top: 70px;
+}
+.buy__input {
+  width: 380px;
+  border: 2px dashed #00000034;
+  height: 70px;
+  padding-left: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.buy__inputs-btn {
+  width: 100%;
+  justify-content: start;
+  display: flex;
+  align-items: center;
+  color: var(--color-grey);
+  background-color: var(--color-accent);
+}
+
+.buy__buttons {
+  display: flex;
+  justify-content: end;
+  padding-top: 50px;
+  gap: 40px;
+}
+
+.more__buy {
+  height: 100%;
+  border: 0;
+  width: 250px;
+  padding: 15px 10px;
+  background-color: var(--color-accent);
+  color: var(--color-grey);
+}
+.buy__now {
+  width: 180px;
+  border: 0;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-inline: 15px;
+}
+
+.btm__info-btn {
+  cursor: pointer;
+  @include hover {
+    color: var(--color-accent);
+  }
+}
+.not--active {
+  opacity: 0.5;
+  cursor: unset;
+}
+.btn__close {
+  border: 0;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: var(--color-accent);
+  background-color: unset;
+  padding: unset;
+  max-width: unset;
+  border-radius: unset;
+}
+.overflow {
+  overflow: hidden;
+}

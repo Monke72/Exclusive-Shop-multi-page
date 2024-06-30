@@ -1,0 +1,91 @@
+.wishlist {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    align-items: center;
+  }
+
+  &__quant {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    padding-bottom: 20px;
+    row-gap: 35px;
+    @include mobile-s {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+.foryou {
+  &__title {
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 76px;
+  }
+}
+
+.quantity {
+  position: relative;
+  right: 2px;
+}
+
+.foryou__main-title {
+  color: var(--color-dark);
+  padding-bottom: 0;
+}
+
+.wishlist__btn,
+.foryou__btn {
+  padding: 16px 48px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 12px 30px;
+  @include hover {
+    transform: scale(1.05);
+  }
+}
+
+.footer--whishlist {
+  margin-top: 140px;
+}
+
+.basket__main {
+  transform: unset;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    color: #000;
+    background-color: #000;
+    left: 2px;
+  }
+}
+.buttons__like {
+  z-index: 100;
+}
+
+.btn__clear {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 60px;
+}
+.basket__clear {
+  padding: 14px 8px;
+  background-color: var(--color-accent);
+  color: #fff;
+  border-radius: 4px;
+}

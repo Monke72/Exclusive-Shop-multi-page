@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Acer 3 Серый",
+    "price": "30200",
+    "discount": "5",
+    "img": "acer-3-gray.webp"
+  },
+  {
+    "id": 2,
+    "title": "Iphone 14 PRO max gold",
+    "price": "100200",
+    "discount": "20",
+    "img": "iphone-14-pro-max-gold.webp"
+  },
+  {
+    "id": 3,
+    "title": "Lenovo 3 Серый",
+    "price": "35000",
+    "discount": "5",
+    "img": "lenovo-3-gray.webp"
+  },
+  {
+    "id": 4,
+    "title": "Macbook 10 Серый",
+    "price": "90000",
+    "discount": "50",
+    "img": "macbook-10-gray.webp"
+  },
+  {
+    "id": 5,
+    "title": "MSI 15 белый",
+    "price": "40000",
+    "discount": "22",
+    "img": "msi-15-white.webp"
+  },
+  {
+    "id": 6,
+    "title": "Poco f4 gt желтый",
+    "price": "36000",
+    "discount": "10",
+    "img": "poco-f4-gt-yellow.webp"
+  },
+  {
+    "id": 7,
+    "title": "Samsung s22 черный",
+    "price": "60000",
+    "discount": "50",
+    "img": "samsung-s22-black.webp"
+  },
+  {
+    "id": 8,
+    "title": "Xiaomi 12x фиолетовый",
+    "price": "30200",
+    "discount": "5",
+    "img": "xiaomi-12x-purple.webp"
+  }
+]

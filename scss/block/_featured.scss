@@ -1,0 +1,153 @@
+.featured {
+  &__info {
+    color: var(--color-grey);
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    @include mobile-s {
+      flex-direction: column;
+    }
+  }
+
+  &__info-ps {
+    padding: 32px;
+    background: url(./../image/featured/ps5.png) no-repeat;
+    background-size: cover;
+    width: 525px;
+    height: 600px;
+    display: flex;
+    @include desktop {
+      height: 500px;
+    }
+    @include tablet {
+      height: 450px;
+    }
+    @include mobile {
+      height: 290px;
+      width: 63%;
+    }
+    @include mobile-s {
+      height: 300px;
+      width: 300px;
+      background-position: center;
+    }
+  }
+
+  &__more {
+    width: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include mobile-s {
+      width: 100%;
+    }
+  }
+
+  &__more-women {
+    position: relative;
+    background: url(./../image/featured/woman.png) no-repeat;
+    height: 100%;
+    display: flex;
+    @include mobile {
+      background-position: center;
+    }
+  }
+
+  &__more-prod {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    @include mobile {
+      padding-top: 20px;
+      gap: 20px;
+    }
+
+    &__sneak,
+    &__perf {
+      background-color: var(--color-dark) !important;
+      background-position: center !important;
+      max-width: 270px;
+      height: 284px;
+      @include desktop {
+        height: 235px;
+      }
+    }
+
+    &__sneak {
+      background: url(./../image/featured/columns.png) no-repeat;
+      @include tablet {
+        background-size: cover;
+        height: 185px;
+      }
+      @include mobile {
+        height: 135px;
+      }
+    }
+    &__perf {
+      background: url(./../image/featured/parfum.png) no-repeat;
+      @include tablet {
+        background-size: cover;
+        height: 185px;
+      }
+      @include mobile {
+        height: 135px;
+      }
+    }
+  }
+}
+
+.featured--title {
+  font-size: 24px;
+  font-weight: 600;
+  @include tablet {
+    font-size: 22px;
+  }
+  @include mobile {
+    font-size: 18px;
+  }
+}
+.featured--text {
+  font-size: 14px;
+  max-width: 240px;
+}
+.featured--btn {
+  padding-bottom: -1px;
+  color: var(--color-grey);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.women--image {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.featured--info {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  gap: 8px;
+  width: 100%;
+  @include desktop {
+    gap: 3px;
+  }
+  @include mobile {
+    gap: 0px;
+  }
+}
+
+.featured__more-women,
+.featured__more-prod__sneak,
+.featured__more-prod__perf {
+  padding: 13px;
+  @include mobile-s {
+    padding: 20px;
+  }
+}
+
+.featured__more-women__info {
+  padding-bottom: 10px;
+}

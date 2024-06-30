@@ -1,5 +1,8 @@
 //base
-@import "./scss/base/reset", "./scss/base/vars", "./scss/base/fonts",
-  "./scss/base/base", "./scss/base/mixins";
+@import "./scss/base/reset", "./scss/base/mixins", "./scss/base/vars",
+  "./scss/base/fonts", "./scss/base/base";
 //blocks
-@import "./scss/block/header";
+@import "./scss/block/header", "./scss/block/today", "./scss/block/catefories",
+  "./scss/block/card", "./scss/block/best", "./scss/block/music",
+  "./scss/block/our", "./scss/block/featured", "./scss/block/info",
+  "./scss/block/footer", "./scss/block/buyWindow", "./scss/block/bascet";

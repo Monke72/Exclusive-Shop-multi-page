@@ -1,0 +1,33 @@
+.our {
+  .card-btm__price {
+    padding-top: 2.5px;
+    padding-right: 8px;
+  }
+
+  padding-top: var(--padding-top-block);
+  padding-bottom: var(--padding-bot-block);
+ 
+
+  &__main {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 60px;
+    column-gap: 30px;
+    @include mobile {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include mobile-s {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__all {
+    display: flex;
+    background-color: var(--color-accent);
+    color: var(--color-grey);
+    padding: 16px 48px;
+    border-radius: 4px;
+    margin-inline: auto;
+    margin-top: 60px;
+  }
+}
